@@ -13,19 +13,18 @@ fun main(){
     ob6.getBookDetails()
     ob7.getBookDetails()
 }
-  abstract class Library {
+abstract class Library {
+    abstract fun addBook(bkName: String, bkID: Int, bkAutor: String)
+}
+
+interface BookDetails{
+    fun getBookDetails()
+}
+
+class Q4: Library(), BookDetails{
     var bookName: String = ""
     var bookID: Int = 0
     var bookAuthor: String = ""
-
-    abstract fun addBook(bkName: String, bkID: Int, bkAutor: String)
-
-    abstract fun getBookDetails()
-}
-
-class Q4: Library(){
-
-
 
     override fun addBook(bkName: String, bkID: Int, bkAutor: String) {
         bookName = bkName
@@ -38,5 +37,4 @@ class Q4: Library(){
         println("Book name: $bookName")
         println("Book author: $bookAuthor\n")
     }
-
 }
