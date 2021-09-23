@@ -10,45 +10,45 @@ package com.example.android_bootcamp_anuj
 fun main(){
     println("\nQ2")
     val ob2 = Q2()
-    ob2.addInteger(2, 2)
-    ob2.addDouble(5.5, 4.6)
-    ob2.multiplyInt(5, 5)
-    ob2.concatString("Anuj ", "Singh")
-    ob2.concatThreeStrings("Introduction ", "to ", "Kotlin ")
+    ob2.Operations(2, 2)
+    ob2.Operations(5.5, 4.6)
+    ob2.Operations(5, 5,5)
+    ob2.Operations("Anuj ", "Singh")
+    ob2.Operations("Introduction ", "to ", "Kotlin ")
 }
 
 // Interface
-interface Operations {
+//interface Operations {
+//
+//    fun addInteger(x: Int, y: Int)
+//
+//    fun addDouble(x: Double, y: Double)
+//
+//    fun multiplyInt(x: Int, y: Int)
+//
+//    fun concatString(str1: String, str2: String)
+//
+//    fun concatThreeStrings(str1: String, str2: String, str3: String)
+//}
 
-    fun addInteger(x: Int, y: Int)
-
-    fun addDouble(x: Double, y: Double)
-
-    fun multiplyInt(x: Int, y: Int)
-
-    fun concatString(str1: String, str2: String)
-
-    fun concatThreeStrings(str1: String, str2: String, str3: String)
-}
-
-class Q2: Operations {
-    override fun addInteger(x: Int, y: Int) {
+class Q2{
+    fun Operations(x: Int, y: Int) {
         println("Sum of Int = ${x+y}")
     }
 
-    override fun addDouble(x: Double, y: Double) {
+    fun Operations(x: Double, y: Double) {
         println("Sum of Double = ${x+y}")
     }
 
-    override fun multiplyInt(x: Int, y: Int) {
-        println("Mutiplication of Int = ${x*y}")
+    fun Operations(x: Int, y: Int,z:Int) {
+        println("Mutiplication of Int = ${x*y*z}")
     }
 
-    override fun concatString(str1: String, str2: String) {
+    fun Operations(str1: String, str2: String) {
         println("Two concatenated strings = ${str1.plus(str2)}")
     }
 
-    override fun concatThreeStrings(str1: String, str2: String, str3: String) {
+    fun Operations(str1: String, str2: String, str3: String) {
         println("Three concatenated strings = ${str1.plus(str2).plus(str3)}")
     }
 

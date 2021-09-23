@@ -18,13 +18,13 @@ interface BankDetails {
     val ROI: Double
     val bankName: String
     val bankCity: String
-    fun getBankDetails();
+//    fun getBankDetails();
 
-//    fun getBankDetails() {
-//        println("Bank name: $bankName")
-//        println("Bank city: $bankCity")
-//        println("Rate of Interest: $ROI\n")
-//    }
+    fun getBankDetails() {
+        println("Bank name: $bankName")
+        println("Bank city: $bankCity")
+        println("Rate of Interest: $ROI\n")
+    }
 
 }
 
@@ -36,11 +36,11 @@ class SBI: BankDetails {
     override val bankCity: String
         get() = "New Delhi"
 
-    override fun getBankDetails() {
-        println("Bank name: $bankName")
-        println("Bank city: $bankCity")
-        println("Rate of Interest: $ROI\n")
-    }
+//    override fun getBankDetails() {
+//        println("Bank name: $bankName")
+//        println("Bank city: $bankCity")
+//        println("Rate of Interest: $ROI\n")
+//    }
 }
 
 class BOI: BankDetails {
@@ -50,11 +50,11 @@ class BOI: BankDetails {
         get() = "BOI"
     override val bankCity: String
         get() = "Gurugram"
-    override fun getBankDetails() {
-        println("Bank name: $bankName")
-        println("Bank city: $bankCity")
-        println("Rate of Interest: $ROI\n")
-    }
+//    override fun getBankDetails() {
+//        println("Bank name: $bankName")
+//        println("Bank city: $bankCity")
+//        println("Rate of Interest: $ROI\n")
+//    }
 }
 
 class ICICI: BankDetails {
@@ -64,10 +64,10 @@ class ICICI: BankDetails {
         get() = "ICICI"
     override val bankCity: String
         get() = "Noida"
-    override fun getBankDetails() {
-        println("Bank name: $bankName")
-        println("Bank city: $bankCity")
-        println("Rate of Interest: $ROI\n")
-    }
+//    override fun getBankDetails() {
+//        println("Bank name: $bankName")
+//        println("Bank city: $bankCity")
+//        println("Rate of Interest: $ROI\n")
+//    }
 }
 
