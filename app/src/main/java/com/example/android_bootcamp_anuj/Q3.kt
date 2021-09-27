@@ -1,34 +1,29 @@
 package com.example.android_bootcamp_anuj
 
-
-// Q3 WAP to create sealed Base class and 3 subclasses of Base class, write a function which will have
-// base class object as an argument and it will return name of the subclass based argument type.
-
+// Q4 WAP to create extension function.
 
 fun main(){
-    println("\nQ3")
-    val ob3 = A()
-    val ob4 = B()
-    val ob5 = C()
-    ob3.getClass(ob3)
-    ob3.getClass(ob4)
-    ob3.getClass(ob5)
+
+    println("\nQ4")
+    val ob6 = Q4()
+    println("Extension function:")
+    ob6.printDetails()
+
 }
 
-sealed class Q3 {
-    val msg = "Hello xWorld!"
 
+class Q4 {
+    val num1: Int = 6
 
-    fun getClass(base: Q3) {
-        println("This is called from object of ${base.javaClass}")
+    // Extension function
+    // Adding functionality to existing
+    // Int class
+    fun Int.Multiplication(num2: Int): Int {
+        return this*num2
     }
-}
 
-class A: Q3(){
-}
 
-class B: Q3(){
-}
-
-class C: Q3(){
+    fun printDetails() {
+        println("Multiplication is: " + 5.Multiplication(num1))
+    }
 }

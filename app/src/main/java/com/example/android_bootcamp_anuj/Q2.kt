@@ -1,18 +1,31 @@
 package com.example.android_bootcamp_anuj
 
-// Q2 WAP to create singleton class.
 
-fun main() {
-    println("Multiplicatiion is: ${Q2.multiply(2, 3)}")
-    Q2.print()
-    println("Singleton Class Variable =  ${Q2.name}")
+// Q3 WAP to create sealed Base class and 3 subclasses of Base class, write a function which will have
+// base class object as an argument and it will return name of the subclass based argument type.
 
+
+fun main(){
+    println("\nQ3")
+    val ob3 = A()
+    val ob4 = B()
+    val ob5 = C()
+    ob3.getClass(ob3)
+    ob3.getClass(ob4)
+    ob3.getClass(ob5)
 }
-object Q2 {
-    //It can be accesed without creating an instance
-    fun multiply(a: Int, b: Int) = a * b
-    fun print(){
-        println("Function called from Singleton class")
+
+sealed class Q3 {
+    fun getClass(base: Q3) {
+        println("This is called from object of ${base.javaClass}")
     }
-    var name:String = "Anuj Singh"
+}
+
+class A: Q3(){
+}
+
+class B: Q3(){
+}
+
+class C: Q3(){
 }
