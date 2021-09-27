@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Bootcamp_Anuj">
         <activity
-            android:name=".MainActivity"
+            android:name=".Q1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
