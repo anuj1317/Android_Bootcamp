@@ -4,13 +4,12 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
 // Q1 Write a program to print your Firstname, LastName & age using init block,companion object.
-
+//
 fun main() {
     println("Q1")
     val ob1 = Q1()
     // calling method
     ob1.printDetails()
-
     // printing details from Companion object
     println("\nValue initialised from companion object")
     println("First name: ${Q1.fname}")
@@ -41,11 +40,11 @@ class Q1 {
 
     }
 
-    fun printDetails() {
+   fun printDetails() {
         println("Value initialised from init block")
         println("First name: $fname")
         println("Last name: $lname")
         println("Age: $age")
-    }
+  }
 
 }
