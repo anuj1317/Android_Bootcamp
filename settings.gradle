@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Android_Bootcamp_Anuj"
 include ':app'
+include ':myfirstmodule'
