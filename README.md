@@ -9,8 +9,5 @@ Generate the signed build for each product flavor.<br>
 
 <!-- ![intro1](https://user-images.githubusercontent.com/42887995/135237483-5633ecfd-e073-450c-9f9c-0a4f620990ed.gif) -->
 
-<video width="320" height="240">
-    
-      <source src="https://user-images.githubusercontent.com/42887995/135237483-5633ecfd-e073-450c-9f9c-0a4f620990ed.gif">
-    </video>
+<img src="https://user-images.githubusercontent.com/42887995/135237483-5633ecfd-e073-450c-9f9c-0a4f620990ed.gif" width="250" height="250"/>
 
