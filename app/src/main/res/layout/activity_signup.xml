@@ -62,7 +62,8 @@
                     android:padding="16dp"
                     android:textColor="@color/white"
                     android:textColorHint="@color/white"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    />
 
 
                 <EditText
