@@ -1,7 +1,12 @@
 # Android_Bootcamp
-Introduction to Kotlin Part 1 [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Kotlin1-Sept21)<br>
-Introduction to Kotlin Part 2 [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Kotlin-part2-Sept22)<br>
-Introduction to Kotlin Part 3 [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Kotlin-part3-Sept24)<br>
-Introduction to Kotlin Part 4 [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Kotlin-Part4-27-Sept)<br>
-Introduction to Android [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Intro_to_App_29-Sept)<br>
-Android: Activity and Intents [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/activity-30Sept)
+# Activity and Intent
+
+Create one signup activity having “user name”, “email-id”, “phone number”, “password” with all fields mandatory. <br>
+
+Explicit Intent : On clicking on signup button user should able to see all the filled details on the next screen. <br>
+
+Implicit Intent : On the second Activity there should be a input box and two button along with the above details. the user should be able to enter a website url and on clicking one of the button an implicit intent should be created to open a web browser with the url entered by the user.<br>
+
+Permission : On clicking on the second button check whether the app has the camera permission granted or not if permission is granted display permission is granted otherwise ask user for permission and display whether the permission is granted or not. <br>
+
+Note : Observe the activity life-cycle callbacks invocation in all of the above cases.<br>
