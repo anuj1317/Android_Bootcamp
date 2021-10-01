@@ -11,7 +11,7 @@ Permission : On clicking on the second button check whether the app has the came
 
 Note : Observe the activity life-cycle callbacks invocation in all of the above cases.<br>
 
-<img src="https://user-images.githubusercontent.com/42887995/135562947-48a04bb8-8bb4-435c-8459-6b62a97a74d3.png" width="400" height = "500">
+<img src="https://user-images.githubusercontent.com/42887995/135562947-48a04bb8-8bb4-435c-8459-6b62a97a74d3.png" width="300" height = "600">
 
 <!-- ![Screenshot_1633060127](https://user-images.githubusercontent.com/42887995/135562947-48a04bb8-8bb4-435c-8459-6b62a97a74d3.png) -->
 ![Screenshot_1633060163](https://user-images.githubusercontent.com/42887995/135562953-c5496f40-52c0-4336-bc38-71b63be6be9a.png)
