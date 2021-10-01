@@ -7,7 +7,6 @@ Create different product Flavor such as QA, PROD and DEV. All the flavor should 
 Generate the signed build for each product flavor.<br>
 
 
-<!-- ![intro1](https://user-images.githubusercontent.com/42887995/135237483-5633ecfd-e073-450c-9f9c-0a4f620990ed.gif) -->
 
 <p align="center">
  <img src="https://user-images.githubusercontent.com/42887995/135237483-5633ecfd-e073-450c-9f9c-0a4f620990ed.gif" width="350" height="650"/>
