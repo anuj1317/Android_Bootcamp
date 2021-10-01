@@ -16,7 +16,11 @@ Note : Observe the activity life-cycle callbacks invocation in all of the above 
   
 <img src="https://user-images.githubusercontent.com/42887995/135562947-48a04bb8-8bb4-435c-8459-6b62a97a74d3.png" width="300" height = "500">
 <img src="https://user-images.githubusercontent.com/42887995/135562953-c5496f40-52c0-4336-bc38-71b63be6be9a.png" width="300" height = "500">
+
+</p>
+<br>
+<p float="left">
 <img src="https://user-images.githubusercontent.com/42887995/135562963-06f704a1-a392-4be9-9de9-14c2f695dc0c.png" width="300" height = "500">
 <img src="https://user-images.githubusercontent.com/42887995/135562969-0b6fdcff-79e6-4c2e-ac2e-3b30cec0c6a8.png" width="300" height = "500">
   
-</p>
+  </p>
