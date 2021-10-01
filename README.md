@@ -24,3 +24,9 @@ Note : Observe the activity life-cycle callbacks invocation in all of the above 
 <img src="https://user-images.githubusercontent.com/42887995/135562969-0b6fdcff-79e6-4c2e-ac2e-3b30cec0c6a8.png" width="300" height = "500">
   
   </p>
+<br>
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/42887995/135237483-5633ecfd-e073-450c-9f9c-0a4f620990ed.gif" width="350" height="650"/>
+</p>
+
