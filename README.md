@@ -6,3 +6,4 @@ Introduction to Kotlin Part 4 [Click Here](https://github.com/anuj1317/Android_B
 Introduction to Android [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Intro_to_App_29-Sept)<br>
 Android: Activity and Intents [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/activity-30Sept)<br>
 Android: Fragments [Click Here](https://github.com/anuj1317/fragments_imp)<br>
+Android: Layout(Linear,Relative,Constraint) [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Layout_Design-4Oct)
