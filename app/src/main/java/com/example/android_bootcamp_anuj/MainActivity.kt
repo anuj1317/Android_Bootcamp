@@ -100,7 +100,7 @@ class MainActivity : AppCompatActivity() {
             for (i in 1..5) {
                 datatosend.add(
                     Dataclass(
-                        "Anuj",
+                        "Ice Cream Sundae",
                         "145, Mall of India",
                         R.drawable.img2,
                         4,
