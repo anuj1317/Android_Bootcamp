@@ -24,7 +24,6 @@ class AdapterClass(val datavalues: ArrayList<Dataclass>): RecyclerView.Adapter<A
        val dateTextView: TextView
        val amountTextView: TextView
 
-       // attach reference of views
        init {
            titleView = itemView.findViewById(R.id.titleView1)
            addressView = itemView.findViewById(R.id.subtitleView1)
@@ -38,10 +37,10 @@ class AdapterClass(val datavalues: ArrayList<Dataclass>): RecyclerView.Adapter<A
 
 
 
+
    }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        // Create a new view, which defines the UI of the list item
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_layout, parent, false)
         return ViewHolder(view)
     }
