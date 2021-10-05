@@ -48,9 +48,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         val recyclerView = findViewById<RecyclerView>(R.id.rvlist)
+
         // attach adapter
         customAdapter = AdapterClass(datatosend)
         recyclerView.adapter = customAdapter
+
         // Set layout for RecyclerView
         val linearLayoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = linearLayoutManager
@@ -60,6 +62,7 @@ class MainActivity : AppCompatActivity() {
 
         recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener(){
 
+            //Checks if scrolling happened or not
             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
                 super.onScrollStateChanged(recyclerView, newState)
                 if(newState == AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL)
@@ -69,7 +72,7 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-
+               //Paging implementation
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
                 val currentItems:Int = linearLayoutManager.childCount
@@ -85,12 +88,8 @@ class MainActivity : AppCompatActivity() {
 
         })
 
-
-
-
-
     }
-
+  //Fetches data after reaching to last element
     private fun fetchData() {
         val progressBar = findViewById<ProgressBar>(R.id.progress)
         progressBar.visibility = View.VISIBLE
@@ -112,7 +111,7 @@ class MainActivity : AppCompatActivity() {
                 customAdapter.notifyDataSetChanged()
                 progressBar.visibility = View.GONE
             }
-        }, 3000)
+        }, 2000)
 
 
 

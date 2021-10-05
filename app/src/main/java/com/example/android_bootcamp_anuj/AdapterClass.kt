@@ -14,6 +14,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class AdapterClass(val datavalues: ArrayList<Dataclass>): RecyclerView.Adapter<AdapterClass.ViewHolder>() {
 
+
+    //Viewholder
    inner class ViewHolder (itemView:View) : RecyclerView.ViewHolder(itemView){
 
        val titleView: TextView
@@ -50,7 +52,7 @@ class AdapterClass(val datavalues: ArrayList<Dataclass>): RecyclerView.Adapter<A
        return datavalues.size
     }
 
-
+  //Binds the view
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.titleView.text = datavalues[position].title
         holder.addressView.text = datavalues[position].address
