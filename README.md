@@ -7,4 +7,5 @@ Introduction to Android [Click Here](https://github.com/anuj1317/Android_Bootcam
 Android: Activity and Intents [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/activity-30Sept)<br>
 Android: Fragments [Click Here](https://github.com/anuj1317/fragments_imp)<br>
 Android: Layout(Linear,Relative,Constraint) [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Layout_Design-4Oct)<br>
-Android:RecyclerView1 [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Recyclerview1-5oct)
+Android:RecyclerView1 [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Recyclerview1-5oct)<br>
+Android:Heterogeneous RecyclerView[Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Recyclerview2-8oct)<br>
