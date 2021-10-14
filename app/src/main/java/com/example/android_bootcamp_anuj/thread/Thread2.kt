@@ -17,10 +17,11 @@ class Thread2(private val context: Context): Thread() {
         }
 
         try {
-            Thread.sleep(500)
+            Thread.sleep(200)
+            Toast.makeText(context,"Thread 2 Started",Toast.LENGTH_SHORT).show()
         }
         catch (e: Exception) {
-            Toast.makeText(context, "Exception: ${e.localizedMessage}", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(context, "Exception", Toast.LENGTH_SHORT).show()
         }
     }
 

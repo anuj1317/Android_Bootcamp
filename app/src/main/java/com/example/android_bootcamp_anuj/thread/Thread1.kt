@@ -15,9 +15,10 @@ class Thread1(private val context: Context): Thread() {
 
         try {
             Thread.sleep(500)
+            Toast.makeText(context,"Thread 1 Started",Toast.LENGTH_SHORT).show()
         }
         catch (e: Exception) {
-            Toast.makeText(context, "Exception: ${e.localizedMessage}", Toast.LENGTH_SHORT).show()
+//            Toast.makeText(context, "Exception: ${e.localizedMessage}", Toast.LENGTH_SHORT).show()
         }
     }
 

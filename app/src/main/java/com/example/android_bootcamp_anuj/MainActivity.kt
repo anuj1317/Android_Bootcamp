@@ -38,16 +38,16 @@ class MainActivity : AppCompatActivity() {
                 PHONE_PERMISSION_CODE)
         }
 
-        val myThread = Thread1(this)
-        val myThread1 = Thread2(this)
+        val myThread1 = Thread1(this)
+        val myThread2 = Thread2(this)
 
-        myThread.start()
-
+        myThread1.start()
+//        myThread1.join()
         // Using join() we are telling
         // that this thread must execute its
         // task first
-        myThread1.start()
-        myThread.join()
+        myThread2.start()
+
 
 
 
