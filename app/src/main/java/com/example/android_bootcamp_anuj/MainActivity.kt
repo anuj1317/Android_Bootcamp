@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-      //Adapter
+        //Adapter
         customAdapter = CustomAdapter(this, ViewList)
         recyclerView.adapter = customAdapter
 
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-          //After reaching the last element it fetches the data
+            //After reaching the last element it fetches the data
             override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
                 super.onScrolled(recyclerView, dx, dy)
                 val currentItems:Int = layoutManager.childCount
@@ -86,26 +86,33 @@ class MainActivity : AppCompatActivity() {
 
     // Function to fetch Data with a delay of 2 Seconds
     private fun fetchData() {
-        val progressBar = findViewById<ProgressBar>(R.id.progress)
-        progressBar.visibility = View.VISIBLE
-
+//        val progressBar = findViewById<ProgressBar>(R.id.progress)
+//        progressBar.visibility = View.VISIBLE
+//
+        ViewList.add(CustomAdapter.LOADING)
+        customAdapter.notifyItemInserted(ViewList.size-1)
+        val oldItem = ViewList.size
         //Delays for 2 sec and then fetches data
         val handler = Handler()
         handler.postDelayed({
+            ViewList.remove(CustomAdapter.LOADING)
+            customAdapter.notifyItemRemoved(ViewList.size-1)
             for (i in 1..5) {
                 when {
-                i % 2 == 0 -> {
-                    ViewList.add(CustomAdapter.TEXT_RECYCLER_VIEW)
+                    i % 2 == 0 -> {
+                        ViewList.add(CustomAdapter.TEXT_RECYCLER_VIEW)
+                    }
+                    i % 3 == 0 -> {
+                        ViewList.add(CustomAdapter.IMAGE_RECYCLER_VIEW)
+                    }
+                    else -> {
+                        ViewList.add(CustomAdapter.TEXT_IMAGE_RECYCLER_VIEW)
+                    }
                 }
-                i % 3 == 0 -> {
-                    ViewList.add(CustomAdapter.IMAGE_RECYCLER_VIEW)
-                }
-                else -> {
-                    ViewList.add(CustomAdapter.TEXT_IMAGE_RECYCLER_VIEW)
-                }
-            }
-                customAdapter.notifyDataSetChanged()
-                progressBar.visibility = View.GONE
+
+                customAdapter.notifyItemRangeInserted(oldItem, ViewList.size)
+
+                //progressBar.visibility = View.GONE
             }
         }, 2000)
     }

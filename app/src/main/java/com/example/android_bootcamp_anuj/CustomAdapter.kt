@@ -5,9 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-
 class CustomAdapter(private val context: Context, private val ViewList: List<Int>):RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     //values to recognize view
@@ -15,6 +15,7 @@ class CustomAdapter(private val context: Context, private val ViewList: List<Int
         const val TEXT_RECYCLER_VIEW = 0
         const val IMAGE_RECYCLER_VIEW = 1
         const val  TEXT_IMAGE_RECYCLER_VIEW = 2
+        const val LOADING = 3
     }
 
     //Creating viewholder for each viewtype
@@ -22,6 +23,11 @@ class CustomAdapter(private val context: Context, private val ViewList: List<Int
     //View that contains only Text
     class ViewHolderText(view: View) : RecyclerView.ViewHolder(view) {
         val textViewcard: TextView = view.findViewById(R.id.textViewRow)
+    }
+
+    //Loader
+    class ViewHolderLoader(view: View) : RecyclerView.ViewHolder(view) {
+        val progressBarView: ProgressBar = view.findViewById(R.id.progressBar)
     }
 
     //View that contains only Image
@@ -37,11 +43,13 @@ class CustomAdapter(private val context: Context, private val ViewList: List<Int
 
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
-    //Based on the view type value it inflates the view
+        //Based on the view type value it inflates the view
         return when (viewType) {
-            TEXT_RECYCLER_VIEW-> ViewHolderText(LayoutInflater.from(parent.context).inflate(R.layout.row_text, parent, false))
+            TEXT_RECYCLER_VIEW -> ViewHolderText(LayoutInflater.from(parent.context).inflate(R.layout.row_text, parent, false))
             IMAGE_RECYCLER_VIEW -> ViewHolderImage(LayoutInflater.from(parent.context).inflate(R.layout.row_image, parent, false))
             TEXT_IMAGE_RECYCLER_VIEW -> ViewHolderImageText(LayoutInflater.from(parent.context).inflate(R.layout.row_image_text, parent, false))
+            LOADING -> ViewHolderLoader(LayoutInflater.from(parent.context).inflate(R.layout.progress, parent, false))
+
             else -> throw IllegalArgumentException("No ViewHolder")
         }
     }
@@ -70,6 +78,9 @@ class CustomAdapter(private val context: Context, private val ViewList: List<Int
                 val viewHolderImage = holder as ViewHolderImageText
                 viewHolderImage.cardImageView.setImageResource(R.drawable.textsale)
                 viewHolderImage.cardTextView.text = context.getString(R.string.imagetextview)
+            }
+            LOADING -> {
+
             }
         }
 
