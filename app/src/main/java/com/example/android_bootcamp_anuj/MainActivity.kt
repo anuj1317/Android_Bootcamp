@@ -14,8 +14,8 @@ import com.example.android_bootcamp_anuj.broadcast.BatteryStatusReceiver
 import com.example.android_bootcamp_anuj.service.BoundService
 import com.example.android_bootcamp_anuj.service.MyMusicService
 import com.example.android_bootcamp_anuj.thread.Thread1
-import com.example.android_bootcamp_anuj.thread.Thread2
 import kotlinx.android.synthetic.main.activity_main.*
+import java.lang.Exception
 
 class MainActivity : AppCompatActivity() {
     companion object {
@@ -38,19 +38,24 @@ class MainActivity : AppCompatActivity() {
                 PHONE_PERMISSION_CODE)
         }
 
-        val myThread1 = Thread1(this)
-        val myThread2 = Thread2(this)
+        val myThread1 = Thread1()
+        val myThread2 = Thread1()
+        val myThread3 = Thread1()
+
+        // thread t1 starts
 
         myThread1.start()
-//        myThread1.join()
-        // Using join() we are telling
-        // that this thread must execute its
-        // task first
+
+        // starts second thread when first thread t1 is died.
+        try {
+            myThread1.join()
+        } catch (e: Exception) {
+            println(e)
+        }
+        // start t2 and t3 thread
+        // start t2 and t3 thread
         myThread2.start()
-
-
-
-
+        myThread3.start()
 
 
         //Service
@@ -112,7 +117,7 @@ class MainActivity : AppCompatActivity() {
         override fun onStop() {
             super.onStop()
             unregisterReceiver(batteryStatusReceiver)
-//            unbindService(myConnection)
+            unbindService(myConnection)
 
         }
 
