@@ -1,23 +1,15 @@
 package com.example.android_bootcamp_anuj
 
 import android.app.ProgressDialog
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.LinearLayout
-import android.widget.ProgressBar
-import android.widget.TextView
-import androidx.core.text.isDigitsOnly
-import com.example.android_bootcamp_anuj.R
-import com.example.android_bootcamp_anuj.RetrofitInstance
-import com.example.android_bootcamp_anuj.DataItem
+import com.example.android_bootcamp_anuj.model.DataItem
+import com.example.android_bootcamp_anuj.retrofit.RetrofitInstance
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : AppCompatActivity() {
     lateinit var progressDialog: ProgressDialog

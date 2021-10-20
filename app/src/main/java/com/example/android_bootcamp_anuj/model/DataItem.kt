@@ -1,4 +1,4 @@
-package com.example.android_bootcamp_anuj
+package com.example.android_bootcamp_anuj.model
 
 
 data class DataItem(
