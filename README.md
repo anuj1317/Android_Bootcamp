@@ -1,8 +1,2 @@
-# Android_Bootcamp
-Introduction to Kotlin Part 1 [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Kotlin1-Sept21)<br>
-Introduction to Kotlin Part 2 [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Kotlin-part2-Sept22)<br>
-Introduction to Kotlin Part 3 [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Kotlin-part3-Sept24)<br>
-Introduction to Kotlin Part 4 [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Kotlin-Part4-27-Sept)<br>
-Introduction to Android [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/Intro_to_App_29-Sept)<br>
-Android: Activity and Intents [Click Here](https://github.com/anuj1317/Android_Bootcamp/tree/activity-30Sept)<br>
-Android: Fragments [Click Here](https://github.com/anuj1317/fragments_imp)<br>
+# Heterogeneous RecyclerView
+<img src="https://user-images.githubusercontent.com/42887995/138210949-4ef2e9b7-3390-465b-918f-745989aee231.png" width="300" height = "500">
