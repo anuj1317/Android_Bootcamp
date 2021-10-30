@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var mUserMainViewModel: MainViewModel
     lateinit var linearLayoutManager: LinearLayoutManager
     lateinit var recyclerView: RecyclerView
-    var lastItem:Int? = null
+    var lastItem:Int?=null
     val tag = "Anuj"
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,7 +52,11 @@ class MainActivity : AppCompatActivity() {
 //        val adapter = CustomAdapter(mUserViewModel.data)
         val adapter = CustomAdapter(mUserMainViewModel.data)
         // Setting the Adapter with the recyclerview
-        lastItem?.let { (recyclerView.layoutManager as LinearLayoutManager).scrollToPosition(it) }
+
+        val ab = getItem()
+        Log.e(tag,"onCreate$ab")
+
+        ab?.let { (recyclerView.layoutManager as LinearLayoutManager).scrollToPosition(it) }
 
         recyclerView.adapter = adapter
 
@@ -77,17 +81,25 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    override fun onPause() {
+    override fun onPause(){
         super.onPause()
-        lastItem = linearLayoutManager.findFirstCompletelyVisibleItemPosition()
-        Log.e(tag,"$lastItem")
+        val item = getItem()
+        Log.e(tag,"onPause$item")
 
+    }
+
+    private fun getItem(): Int? {
+        lastItem = linearLayoutManager.findFirstCompletelyVisibleItemPosition()
+//        Log.e(tag,"onPause$lastItem")
+        return lastItem
     }
 
 
 //    override fun onResume() {
 //        super.onResume()
-////        recyclerView.layoutManager?.scrollToPosition(lastItem)
-//        lastItem?.let { (recyclerView.layoutManager as LinearLayoutManager).scrollToPosition(it+10) }
+//        val ab = getItem()
+//      // recyclerView.layoutManager?.scrollToPosition(lastItem)
+//        Log.e(tag,"onResume$ab")
+//       ab?.let { (recyclerView.layoutManager as LinearLayoutManager).scrollToPosition(it) }
 //    }
 }
