@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Android_Bootcamp_Anuj">
         <activity
-            android:name=".viewActivity"
+            android:name=".ViewActivity"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
