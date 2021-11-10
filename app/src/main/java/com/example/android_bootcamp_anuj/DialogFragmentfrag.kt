@@ -38,7 +38,7 @@ class DialogFragmentfrag : DialogFragment() {
             .setView(dialogLayout)
             .setTitle(title)
             .setCancelable(false)
-            .setPositiveButton("Submit") { dialog, whic ->
+            .setPositiveButton("Submit") { dialog, which ->
                 //Log.i(TAG, "Description is ${descriptionEditText.text}")
                 getDescriptionFromDialog()
             }
